@@ -21,6 +21,7 @@ public class SearchGoogleTest {
 
     @Before
     public void setUp() throws Exception {
+        System.setProperty("webdriver.gecko.driver", "/Users/ssvedin/selenium/geckodriver");
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
